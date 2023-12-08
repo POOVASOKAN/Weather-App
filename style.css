@@ -10,6 +10,8 @@ body{
     background-image: url("https://images.unsplash.com/photo-1457003633805-c9e8bd076e0b?q=80&w=3026&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
    background-size: cover;
    background-repeat: no-repeat;
+   min-height: 100vh;
+   padding-top: 100px;
 }
 .card{
     width: 90%;
@@ -21,7 +23,7 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.3);
     -webkit-backdrop-filter: blur(3.1px);
     color: #fff;
-    margin: 100px auto 0;
+    margin-inline: auto;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
