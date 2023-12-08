@@ -43,7 +43,11 @@ async function checkWeather(city) {
   }
 }
 
+let lastSearchBoxValue = searchBox.value
 searchBtn.addEventListener("click", (e) => {
   e.preventDefault();
+  //! Avoid unnecessary refetching if it's the same city as before 
+  if (searchBox.value === lastSearchBoxValue) return
   checkWeather(searchBox.value);
+  lastSearchBoxValue = searchBox.value
 });
